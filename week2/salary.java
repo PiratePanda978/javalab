@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main
+public class salary
 {
 	public static void main(String[] args) {
 	    int sal;
