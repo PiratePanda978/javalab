@@ -1,8 +1,6 @@
-import java.util.Scanner;
 import java.util.Random;
 public class q2{
     public static void main(String args[]){
-        Scanner in = new Scanner(System.in);
         Random rand = new Random();
         System.out.print("City : Code\n...........\nDelhi : 01\nMumbai : 02\nChennai : 03\nHyderabad : 04\nPune : 05\n\n");
         int [][] temp = new int[5][6];
