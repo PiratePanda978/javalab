@@ -4,7 +4,7 @@ public class resistance{
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         System.out.println("Enter length");
-        double length = in.extDouble();
+        double length = in.nextDouble();
         System.out.println("Enter diameter");
         double dia = in.nextDouble();
         System.out.println("Enter resistivity");
