@@ -17,18 +17,19 @@ public class JDBC extends HttpServlet{
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connect = DriverManager.getConnection(URL,USER,PASS);
-            Statement statement = connect.createStatement();
-            ResultSet rs = statement.executeQuery("select * from REGISTRATION");
-            out.println("<table border=\"1\">");
-            while(rs.next()){
-                out.println("<tr>");
-                out.println("<td>"+rs.getInt("id")+"</td>");
-                out.println("<td>"+rs.getString("first")+"</td>");
-                out.println("<td>"+rs.getString("last")+"</td>");
-                out.println("<td>"+rs.getInt("age")+"</td>");
-                out.println("</tr>");
-            }
-            out.println("</table>");
+            out.println("<h1>Database connected.</h1>");
+            // Statement statement = connect.createStatement();
+            // ResultSet rs = statement.executeQuery("select * from REGISTRATION");
+            // out.println("<table border=\"1\">");
+            // while(rs.next()){
+            //     out.println("<tr>");
+            //     out.println("<td>"+rs.getInt("id")+"</td>");
+            //     out.println("<td>"+rs.getString("first")+"</td>");
+            //     out.println("<td>"+rs.getString("last")+"</td>");
+            //     out.println("<td>"+rs.getInt("age")+"</td>");
+            //     out.println("</tr>");
+            // }
+            // out.println("</table>");
         }
         catch(ClassNotFoundException e){
             e.printStackTrace();
